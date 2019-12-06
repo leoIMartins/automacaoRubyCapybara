@@ -14,7 +14,8 @@
 
 #Método com try catch
 def soma(n1, n2)
-    n1 + n2
+    puts n1 + n2
+    
 rescue Exception => e
     puts 'Erro ao executar a soma'
 end
