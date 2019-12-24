@@ -1,6 +1,6 @@
 
 
-describe 'Caixa de seleção', :dropdown do   # ',:dropdown' para executar somente este cenário
+describe 'Caixa de opções', :dropdown do   # ',:dropdown' para executar somente este cenário
 
     it 'item específico simples' do
         visit 'http://training-wheels-protocol.herokuapp.com/dropdown'
