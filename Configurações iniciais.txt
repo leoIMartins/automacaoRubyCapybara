@@ -1,0 +1,22 @@
+- Baixar o console emulator (cmder) versão full
+- Extrair dentro do diretório C:\Tools
+- Copiar o path C:\Tools\cmder\vendor\git-for-windows\usr\bin
+- Criar a variável de SISTEMA chamada "cmder" com o valor do path acima
+- Adicionar o mesmo path no final da variável de sistema "Path", da seguinte maneira: ;%cmder%
+- No diretório C:\Tools\cmder, criar um atalho do executável, renomear como "Console" e fixá-lo na barra de tarefas
+
+- Baixar o Ruby with devkit na versão recomendada pelo site www.rubyinstaller.org/downloads
+- Fechar qualquer console aberto
+- Abrir instalador do Ruby
+- INSTALL > NEXT > Marcar não para rodar ridk installer e clicar em FINISH
+- Abrir o console emulator e verificar a versão do Ruby com o comando: ruby --version
+- Executar o comando: ridk install
+- Escolher a opção 3 e clicar em ENTER
+- Clicar em ENTER para sair
+- Executar o comando: gem install bundler
+- Verificar a versão do bundler com o comando: bundler --version
+
+- Baixar o chromedriver na versão do Google Chrome instalado
+- Extrair o chromedriver no diretório C:\Windows
+- SE PRECISAR, executar o comando "gem install bundler" na pasta "capy"
+- abrir o cmder no diretório do capy e executar o comando: rspec
