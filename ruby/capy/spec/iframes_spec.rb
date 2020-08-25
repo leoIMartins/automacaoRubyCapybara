@@ -5,7 +5,7 @@ describe 'iframes' do
     # iframe com id e name
     describe 'bom', :nice_iframe do
         before(:each) do
-            visit 'http://training-wheels-protocol.herokuapp.com/nice_iframe'
+            visit '/nice_iframe'
         end
 
         it 'adicionar ao carrinho' do
@@ -23,7 +23,7 @@ describe 'iframes' do
     # iframe sem id e name (necessários pelo capybara)
     describe 'ruim', :bad_iframe do
         before(:each) do
-            visit 'http://training-wheels-protocol.herokuapp.com/bad_iframe'
+            visit '/bad_iframe'
         end
 
         it 'adicionar deve estar vazio' do

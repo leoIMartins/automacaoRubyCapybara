@@ -2,7 +2,7 @@
 describe 'Upload', :upload do
 
     before(:each) do
-        visit 'http://training-wheels-protocol.herokuapp.com/upload'
+        visit '/upload'
         @arquivo = Dir.pwd + '/spec/fixtures/arquivo.txt'   # @arquivo é uma variável de instância, por isso o @
         @imagem = Dir.pwd + '/spec/fixtures/imagem.png'   # @arquivo é uma variável de instância, por isso o @
     end
