@@ -1,16 +1,18 @@
 #language: pt
 
+@bread_bakery
 Funcionalidade: Adicionar ao carrinho
     Para que eu possa finalizar uma compra
     Sendo um cliente que já decidiu o que deseja comer
     Posso adicionar itens ao meu carrinho
 
+    @temp
     Cenario: Adicionar 1 unidade
 
         Dado que o produto desejado é "Cup Cake"
         E o valor do produto é de "R$ 8,70"
         Quando eu adiciono 1 unidade
-        Então 1 unidade deste deve ser adicionado ao carrinho
+        Então deve ser adicionado 1 unidade deste item
         E o valor total deve ser de "R$ 8,70"
 
     Cenario: Adicionar 2 unidades
@@ -31,4 +33,3 @@ Funcionalidade: Adicionar ao carrinho
         Quando eu adiciono os itens
         Então vejo todos os itens no carrinho
         E valor total deve ser de "R$ 27,10"
-        
