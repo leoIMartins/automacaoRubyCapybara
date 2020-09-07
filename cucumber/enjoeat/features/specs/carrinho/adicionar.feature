@@ -6,12 +6,13 @@ Funcionalidade: Adicionar ao carrinho
     Sendo um cliente que já decidiu o que deseja comer
     Posso adicionar itens ao meu carrinho
 
+    @bug
     Cenario: Adicionar 1 unidade
 
         Dado que o produto desejado é "Cup Cake"
         E o valor do produto é de "R$ 8,70"
         Quando eu adiciono 1 unidade(s)
-        Então deve ser adicionado 1 unidade deste item
+        Então deve ser adicionado 1 unidade(s) deste item
         E o valor total deve ser de "R$ 8,70"
     
     Cenario: Adicionar 2 unidades
@@ -22,7 +23,6 @@ Funcionalidade: Adicionar ao carrinho
         Então deve ser adicionado 2 unidade(s) deste item
         E o valor total deve ser de "R$ 5,00"
 
-    @temp
     Cenario: Adicionar varios itens
 
         Dado que os produtos desejados são:

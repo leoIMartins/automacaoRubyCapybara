@@ -1,3 +1,5 @@
+------------------------------- FUNDAMENTAL ------------------------------- 
+
 - Baixar o console emulator (cmder) versão full
 - Extrair dentro do diretório C:\Tools
 - Copiar o path C:\Tools\cmder\vendor\git-for-windows\usr\bin
@@ -20,3 +22,12 @@
 - Extrair o chromedriver no diretório C:\Windows
 - SE PRECISAR, executar o comando "gem install bundler" na pasta "capy"
 - abrir o cmder no diretório do capy e executar o comando: rspec
+- instalar extensões do vscode
+- para o rufo, rodar o comando: "gem install rufo"
+
+------------------------- CUCUMBER PARA WEB APPS -------------------------
+
+- baixar o node
+- instalar o node NEXT > NEXT ... > FINISH
+- verificar instalação com os comandos: node -v  e  npm -v
+- rodar o comando "blundle install" na pasta onde encontram-se os arquivos gemfile
