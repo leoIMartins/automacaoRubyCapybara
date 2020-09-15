@@ -45,7 +45,7 @@
       "name": "Ice Cream",
       "category": "Sorvetes",
       "deliveryEstimate": "1 hora",
-      "rating": 0.0,
+      "rating": 0,
       "imagePath": "assets/img/restaurants/icy.png",
       "about": "A Ice Cream é uma sorveteria inovadora.",
       "hours": "Funciona todos os dias, de 10h às 1h"
@@ -370,5 +370,46 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "name": "Fernando",
+      "email": "eu@papito.io",
+      "emailConfirmation": "eu@papito.io",
+      "address": "Avenida Paulista",
+      "number": "1000",
+      "optionalAddress": "17o andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Fernando",
+      "email": "eu@papito.io",
+      "emailConfirmation": "eu@papito.io",
+      "address": "Avenida Paulista",
+      "number": "1000",
+      "optionalAddress": "17o andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }
