@@ -12,7 +12,7 @@ Funcionalidade: Finalizar pedido
     # BDT (Teste guiado por comportamento)
         # possui uma escrita parecida com Casos de Teste
         # agrega valor apenas para a equipe de teste
-    
+    @smoke
     Cenario: Finalizar pedido com Cartão Refeição
 
         Dado que eu fechei o pedido com os itens:
