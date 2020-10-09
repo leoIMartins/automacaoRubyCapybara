@@ -1,4 +1,4 @@
-class SidebarView
+class SideBarView
   include Capybara::DSL
 
   def logged_user
