@@ -8,7 +8,7 @@ Então("devo ser autenticado") do
 end
 
 Então("devo ver {string} na área logada") do |expect_name|
-  @sidebar = SidebarView.new
+  @sidebar = SideBarView.new
   expect(@sidebar.logged_user).to eql expect_name
 end
 
