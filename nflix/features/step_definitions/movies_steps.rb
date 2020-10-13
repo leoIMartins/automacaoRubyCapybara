@@ -1,7 +1,11 @@
 Dado("que {string} é um novo filme") do |movie_code|
-  file = YAML.load_file(File.join(Dir.pwd, "features/support/fixtures/movies.yaml")) # Recurso do Ruby. Procura arquivos dentro da raiz
+  file = YAML.load_file(File.join(Dir.pwd, "features/support/fixtures/movies.yaml"))
   @movie = file[movie_code]
   Database.new.delete_movie(@movie["title"])
+end
+
+Dado("este filme já existe no catálogo") do
+  Database.new.insert_movie(@movie)
 end
 
 Quando("eu faço o cadastro deste filme") do
