@@ -30,3 +30,7 @@ docker run --name nflix-web --network=skynet -e "VUE_APP_API=http://localhost:30
 
 ou Docker ToolBox
 docker run --name nflix-web --network=skynet -e "VUE_APP_API=http://192.168.99.100:3000" -p 8080:8080 -d papitoio/nflix-web
+
+Ativar e desativar Hypervisor para não dar problema em Máquinas Virtuais:
+bcdedit /set hypervisorlaunchtype auto
+bcdedit /set hypervisorlaunchtype off

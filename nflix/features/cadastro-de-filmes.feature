@@ -10,7 +10,7 @@ Funcionalidade: Cadastro de filmes
     Esquema do Cenario: Novo filme
         O gestor de catálogo cadastrar um novo filme através do formulário
         e um novo registro é inserido no catálogo Ninjaflix.
-
+        
         Dado que <codigo> é um novo filme
         Quando eu faço o cadastro deste filme
         Então devo ver o novo filme na lista
@@ -31,21 +31,23 @@ Funcionalidade: Cadastro de filmes
         Quando eu faço o cadastro deste filme
         Então devo ver a notificação <texto>
 
-            Exemplos:
-            | codigo      | texto                                          |
-            | "no_title"  | "Oops - Filme sem titulo. Pode isso Arnaldo?"  |
-            | "no_status" | "Oops - O status deve ser informado!"          |
-            | "no_year"   | "Oops - Faltou o ano de lançamento também!"    |
-            | "no_date"   | "Oops - Quase lá, só falta a data de estréia!" |
+        Exemplos:
+            | codigo      | texto                                               |
+            | "no_title"  | "Oops - Filme sem titulo. Pode isso Arnaldo?"       |
+            | "no_status" | "Oops - O status deve ser informado!"               |
+            | "no_year"   | "Oops - Faltou o ano de lançamento também!"         |
+            | "no_date"   | "Oops - Quase lá, só falta a data de estréia!"      |
 
     @dup_movie
     Cenario: Duplicado
-        O gestor de catálogo tenta cadastrar um filme, porém o título
-        já foi cadastrado em outro momento e o sistema notifica o usuário
+        O gestor de catálogo tenta cadastrar um filme, porem o títulos
+        já foi cadastrado e outro momento e o sistema notitica o usuário
         informando que o título já existe.
 
         Dado que "deadpool2" é um novo filme
         Mas este filme já existe no catálogo
         Quando eu faço o cadastro deste filme
         Então devo ver a notificação "Oops - Este titulo já existe no Ninjaflix."
-        
+
+
+
